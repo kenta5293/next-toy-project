@@ -1,0 +1,18 @@
+{
+  "parser": "@typescript-eslint/parser", // 타입스크립트의 구문 해석을 위해 사용
+  "extends": ["airbnb", "prettier"], // airbnb 규칙, prettier사용
+  "env": {
+    "browser": true,
+    "node": true
+  }, // 사전 정의된 전역 변수 사용을 정의, browser, node 설정하지 않으면 console, require 같은 static 메서드를 인식할 수 없다.
+  "plugins": ["@typescript-eslint", "react-hooks", "prettier"],
+  "rules": {
+    // 규칙을 직접 수정
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-filename-extension": 0,
+    "no-use-before-define": 0,
+    "import/extensions": 0,
+    "import/no-unresolved": 0
+  }
+}
