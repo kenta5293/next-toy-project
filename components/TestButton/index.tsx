@@ -40,7 +40,7 @@ export const TestButtonStyled = ({
   const isBold = bold ? 'storybook-button--bold' : '';
   return (
     <TestButton
-      className={['storybook-button', `storybook-button--${size}`, mode, isBold].join(' ')}
+      className={[`storybook-button--${size}`, mode, isBold].join(' ')}
       style={{ backgroundColor }}
       {...props}
     >
