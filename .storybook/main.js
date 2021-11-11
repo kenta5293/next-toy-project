@@ -8,6 +8,7 @@ module.exports = {
     "@storybook/addon-docs"
   ],
 }
+
 /*
   ⭐️ main.js
    ∙ Storybook을 위한 config 설정이 담겨 있음.
